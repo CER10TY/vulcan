@@ -1,0 +1,12 @@
+name = "ARCMF";
+picture = "logo_arcmf_ca.paa";
+actionName = "GitHub";
+action = "https://github.com/ARCOMM/ARCMF2";
+description = "ARCOMM Mission Framework.";
+logo = "logo_arcmf_ca.paa";
+logoOver = "logo_arcmf_ca.paa";
+tooltip = "ARCOMM Mission Framework.";
+tooltipOwned = "ARCOMM Mission Framework.";
+overview = "ARCOMM Mission Framework.";
+author = "ARCOMM";
+overviewPicture = "logo_arcmf_ca.paa";
