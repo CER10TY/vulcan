@@ -1,0 +1,655 @@
+version=52;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=442;
+	};
+	class MarkerIDProvider
+	{
+		nextID=1;
+	};
+	class Camera
+	{
+		pos[]={24.947056,12.153877,90.933739};
+		dir[]={0.023706036,-0.3349674,-0.94194108};
+		up[]={0.0084279682,0.94222969,-0.33486769};
+		aside[]={-0.99969143,1.6532067e-007,-0.025160069};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"A3_Characters_F",
+	"A3_Data_F_Curator_Virtual"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=2;
+		class Item0
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Data_F_Curator";
+			name="Arma 3 Zeus Update - Main Configuration";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+	};
+};
+randomSeed=3124507;
+class ScenarioData
+{
+	author="Kingsley";
+};
+class Mission
+{
+	class Intel
+	{
+		briefingName="ARCMF";
+		overviewText="ARCOMM Mission Framework.";
+		resistanceWest=0;
+		startWeather=0;
+		startWind=0;
+		forecastWeather=0;
+		forecastWind=0;
+		forecastWaves=0;
+		rainForced=1;
+		lightningsForced=1;
+		wavesForced=1;
+		windForced=1;
+		year=2016;
+		month=2;
+		day=15;
+		hour=12;
+		minute=0;
+		startFogDecay=0;
+		forecastFogDecay=0;
+	};
+	class Entities
+	{
+		items=10;
+		class Item0
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14.07,5.0014391,74.469002};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						init="GrpBLUFOR_ASL = group this; [""dc"",this] call f_fnc_assignGear;";
+						name="UnitBLUFOR_ASL_SL";
+						description="1PLT Alpha Squad Leader";
+						isPlayer=1;
+						isPlayable=1;
+					};
+					id=18;
+					type="B_Soldier_SL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={19.070053,5.0014391,74.518784};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="GrpBLUFOR_ASL = group this; [""m"",this] call f_fnc_assignGear;";
+						name="UnitBLUFOR_ASL_M";
+						description="1PLT Alpha Medic";
+						isPlayable=1;
+					};
+					id=20;
+					type="B_medic_F";
+				};
+			};
+			class Attributes
+			{
+				formation="LINE";
+			};
+			id=22;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ASL";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=6;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={24.08379,5.0014391,71.58522};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="GrpBLUFOR_A1 = group this; [""ftl"",this] call f_fnc_assignGear;";
+						name="UnitBLUFOR_A1_FTL";
+						description="1PLT Alpha 1 Fireteam Leader";
+						isPlayable=1;
+					};
+					id=24;
+					type="B_Soldier_TL_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={29.08379,5.0014391,71.635223};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpBLUFOR_A1 = group this; [""ar"",this] call f_fnc_assignGear;";
+						name="UnitBLUFOR_A1_AR";
+						description="1PLT Alpha 1 Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=26;
+					type="B_soldier_AR_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={19.08379,5.0014391,71.635223};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpBLUFOR_A1 = group this; [""aar"",this] call f_fnc_assignGear;";
+						name="UnitBLUFOR_A1_AAR";
+						description="1PLT Alpha 1 Assistant Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=28;
+					type="B_soldier_AAR_F";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={34.08379,5.0014391,71.685226};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpBLUFOR_A1 = group this; [""rat"",this] call f_fnc_assignGear;";
+						name="UnitBLUFOR_A1_AT";
+						description="1PLT Alpha 1 Rifleman (AT)";
+						isPlayable=1;
+					};
+					id=30;
+					type="B_soldier_LAT_F";
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14.08379,5.0014391,71.685226};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpBLUFOR_A1 = group this; [""r"",this] call f_fnc_assignGear;";
+						name="UnitBLUFOR_A1_R_1";
+						description="1PLT Alpha 1 Rifleman";
+						isPlayable=1;
+					};
+					id=32;
+					type="B_Soldier_F";
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={39.08379,5.0014391,71.735229};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpBLUFOR_A1 = group this; [""r"",this] call f_fnc_assignGear;";
+						name="UnitBLUFOR_A1_R";
+						description="1PLT Alpha 1 Rifleman";
+						isPlayable=1;
+					};
+					id=34;
+					type="B_Soldier_F";
+				};
+			};
+			class Attributes
+			{
+				formation="LINE";
+			};
+			id=36;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="A1";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=6;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={24.061062,5.0014391,68.855728};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="GrpBLUFOR_A2 = group this; [""ftl"",this] call f_fnc_assignGear;";
+						name="UnitBLUFOR_A2_FTL";
+						description="1PLT Alpha 2 Fireteam Leader";
+						isPlayable=1;
+					};
+					id=38;
+					type="B_Soldier_TL_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={29.061062,5.0014391,68.905731};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpBLUFOR_A2 = group this; [""ar"",this] call f_fnc_assignGear;";
+						name="UnitBLUFOR_A2_AR";
+						description="1PLT Alpha 2 Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=40;
+					type="B_soldier_AR_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={19.061062,5.0014391,68.905731};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpBLUFOR_A2 = group this; [""aar"",this] call f_fnc_assignGear;";
+						name="UnitBLUFOR_A2_AAR";
+						description="1PLT Alpha 2 Assistant Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=42;
+					type="B_soldier_AAR_F";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={34.061062,5.0014391,68.955734};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpBLUFOR_A2 = group this; [""rat"",this] call f_fnc_assignGear;";
+						name="UnitBLUFOR_A2_AT";
+						description="1PLT Alpha 2 Rifleman (AT)";
+						isPlayable=1;
+					};
+					id=44;
+					type="B_soldier_LAT_F";
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14.061062,5.0014391,68.955734};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpBLUFOR_A2 = group this; [""r"",this] call f_fnc_assignGear;";
+						name="UnitBLUFOR_A2_R_1";
+						description="1PLT Alpha 2 Rifleman";
+						isPlayable=1;
+					};
+					id=46;
+					type="B_Soldier_F";
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={39.061062,5.0014391,69.005737};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpBLUFOR_A2 = group this; [""r"",this] call f_fnc_assignGear;";
+						name="UnitBLUFOR_A2_R";
+						description="1PLT Alpha 2 Rifleman";
+						isPlayable=1;
+					};
+					id=48;
+					type="B_Soldier_F";
+				};
+			};
+			class Attributes
+			{
+				formation="LINE";
+			};
+			id=50;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="A2";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item3
+		{
+			dataType="Group";
+			side="West";
+			class Attributes
+			{
+				formation="LINE";
+			};
+			id=64;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="A3";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item4
+		{
+			dataType="Group";
+			side="West";
+			class Attributes
+			{
+				formation="LINE";
+			};
+			id=70;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BSL";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item5
+		{
+			dataType="Group";
+			side="West";
+			class Attributes
+			{
+				formation="LINE";
+			};
+			id=168;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="2PLT";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item6
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={0,5,0};
+			};
+			name="HC1";
+			isPlayable=1;
+			description="HC1";
+			id=1658;
+			type="HeadlessClient_F";
+		};
+		class Item7
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={0,5,1};
+			};
+			name="HC2";
+			isPlayable=1;
+			description="HC2";
+			id=1660;
+			type="HeadlessClient_F";
+		};
+		class Item8
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={0,5,2};
+			};
+			name="HC3";
+			isPlayable=1;
+			description="HC3";
+			id=1854;
+			type="HeadlessClient_F";
+		};
+		class Item9
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={0,5,3};
+			};
+			name="UnitGM";
+			isPlayable=1;
+			description="Game Master";
+			id=1856;
+			type="VirtualCurator_F";
+		};
+	};
+};

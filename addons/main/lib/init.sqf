@@ -1,0 +1,1 @@
+[{hint str diag_frameNo}, 1, []] call CBA_fnc_addPerFrameHandler;

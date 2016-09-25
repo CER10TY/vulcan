@@ -1,0 +1,11 @@
+#include "script_component.hpp"
+
+class Header {
+    gameType = Coop;
+    minPlayers = 1;
+    maxPlayers = 229;
+};
+
+onLoadName = EXT_TITLE;
+onLoadMission = EXT_SUMMARY;
+author = EXT_AUTHORS;
