@@ -5,7 +5,3 @@ class Header {
     minPlayers = 1;
     maxPlayers = 229;
 };
-
-onLoadName = EXT_TITLE;
-onLoadMission = EXT_SUMMARY;
-author = EXT_AUTHORS;

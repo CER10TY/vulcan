@@ -5,7 +5,7 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"ace_common"};
+        requiredAddons[] = {"arcmf_main"};
         author = ECSTRING(main,ARCMFTeam);
         authors[] = {"Kingsley"};
         VERSION_CONFIG;

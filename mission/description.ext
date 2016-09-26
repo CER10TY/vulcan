@@ -1,1 +1,6 @@
 #include "\z\arcmf\addons\main\lib\description.ext"
+//--- You can edit anything below this line
+
+onLoadName = "ARCMF";
+onLoadMission = "ARCOMM Mission Framework.";
+author = "Kingsley, tryteyker";
