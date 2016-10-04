@@ -1,2 +1,1 @@
 PREP(updateMarkers);
-PREP(moduleInit);

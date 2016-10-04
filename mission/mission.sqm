@@ -26,14 +26,13 @@ binarizationWanted=0;
 addons[]=
 {
 	"A3_Characters_F",
-	"A3_Data_F_Curator_Virtual",
-	"arcmf_group"
+	"A3_Data_F_Curator_Virtual"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=3;
+		items=2;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -47,12 +46,6 @@ class AddonsMetaData
 			name="Arma 3 Zeus Update - Main Configuration";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
-		};
-		class Item2
-		{
-			className="arcmf_group";
-			name="arcmf_group";
-			author="ARCOMM";
 		};
 	};
 };
@@ -87,7 +80,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=8;
+		items=7;
 		class Item0
 		{
 			dataType="Group";
@@ -558,58 +551,6 @@ class Mission
 			description="Game Master";
 			id=1856;
 			type="VirtualCurator_F";
-		};
-		class Item7
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={22.66,5,63.709};
-			};
-			id=443;
-			type="arcmf_group_module";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="arcmf_group_module_Enabled";
-					expression="_this setVariable ['Enabled',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="arcmf_group_module_Delay";
-					expression="_this setVariable ['Delay',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=5;
-						};
-					};
-				};
-				nAttributes=2;
-			};
 		};
 	};
 };
