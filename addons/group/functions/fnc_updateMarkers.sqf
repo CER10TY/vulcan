@@ -18,38 +18,30 @@
 
 {deleteMarkerLocal _x; false} count GVAR(markers);
 
+if (!GVAR(enabled)) exitWith {};
+
 GVAR(markers) = [];
 
-private _groupsToDrawMarkers = allGroups select {
-    side _x == _playerSide &&
-    {{isPlayer _x} count units _x > 0} &&
-    {_x getVariable [QGVAR(handled), false]}
-};
-
 private _playerSide = playerSide;
-private _enableGroupMarkers = true;
 private _markerIndex = 0;
-
-if (!_enableGroupMarkers) exitWith {};
+private _groupsToDrawMarkers = allGroups select {side _x == _playerSide};
 
 {
     private _markerType = [_x] call CFUNC(getMarkerType);
     private _colour = _x getVariable [QGVAR(color), format ["Color%1", side _x]];
     private _marker = createMarkerLocal [
         format ["%1_%2", QGVAR(marker), _markerIndex],
-        [
-            (getPos leader _x) select 0,
-            (getPos leader _x) select 1
-        ]
+        getPos leader _x
     ];
 
+    _marker setMarkerShapeLocal "ICON";
     _marker setMarkerTypeLocal _markerType;
     _marker setMarkerColorLocal _colour;
     _marker setMarkerTextLocal (groupId _x);
     _marker setMarkerSizeLocal [0.88, 0.88];
 
     GVAR(markers) pushBack _marker;
-    _markerIndex = _markerIndex + 1;
+    INC(_markerIndex);
 
     false
 } count _groupsToDrawMarkers;

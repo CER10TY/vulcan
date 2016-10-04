@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=442;
+		nextID=444;
 	};
 	class MarkerIDProvider
 	{
@@ -16,23 +16,24 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={24.947056,12.153877,90.933739};
-		dir[]={0.023706036,-0.3349674,-0.94194108};
-		up[]={0.0084279682,0.94222969,-0.33486769};
-		aside[]={-0.99969143,1.6532067e-007,-0.025160069};
+		pos[]={18.220083,16.516104,50.449921};
+		dir[]={0.28188142,-0.48535612,0.82765168};
+		up[]={0.15647815,0.87431335,0.45944911};
+		aside[]={0.94661784,1.7113052e-007,-0.32239944};
 	};
 };
 binarizationWanted=0;
 addons[]=
 {
 	"A3_Characters_F",
-	"A3_Data_F_Curator_Virtual"
+	"A3_Data_F_Curator_Virtual",
+	"arcmf_group"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=2;
+		items=3;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -46,6 +47,12 @@ class AddonsMetaData
 			name="Arma 3 Zeus Update - Main Configuration";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
+		};
+		class Item2
+		{
+			className="arcmf_group";
+			name="arcmf_group";
+			author="ARCOMM";
 		};
 	};
 };
@@ -80,7 +87,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=10;
+		items=8;
 		class Item0
 		{
 			dataType="Group";
@@ -502,105 +509,6 @@ class Mission
 		};
 		class Item3
 		{
-			dataType="Group";
-			side="West";
-			class Attributes
-			{
-				formation="LINE";
-			};
-			id=64;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="groupID";
-					expression="_this setGroupID [_value];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="A3";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item4
-		{
-			dataType="Group";
-			side="West";
-			class Attributes
-			{
-				formation="LINE";
-			};
-			id=70;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="groupID";
-					expression="_this setGroupID [_value];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="BSL";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item5
-		{
-			dataType="Group";
-			side="West";
-			class Attributes
-			{
-				formation="LINE";
-			};
-			id=168;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="groupID";
-					expression="_this setGroupID [_value];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="2PLT";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item6
-		{
 			dataType="Logic";
 			class PositionInfo
 			{
@@ -612,7 +520,7 @@ class Mission
 			id=1658;
 			type="HeadlessClient_F";
 		};
-		class Item7
+		class Item4
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -625,7 +533,7 @@ class Mission
 			id=1660;
 			type="HeadlessClient_F";
 		};
-		class Item8
+		class Item5
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -638,7 +546,7 @@ class Mission
 			id=1854;
 			type="HeadlessClient_F";
 		};
-		class Item9
+		class Item6
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -650,6 +558,58 @@ class Mission
 			description="Game Master";
 			id=1856;
 			type="VirtualCurator_F";
+		};
+		class Item7
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={22.66,5,63.709};
+			};
+			id=443;
+			type="arcmf_group_module";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="arcmf_group_module_Enabled";
+					expression="_this setVariable ['Enabled',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="arcmf_group_module_Delay";
+					expression="_this setVariable ['Delay',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=5;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 	};
 };
