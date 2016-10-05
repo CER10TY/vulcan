@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={18.220083,16.516104,50.449921};
-		dir[]={0.28188142,-0.48535612,0.82765168};
-		up[]={0.15647815,0.87431335,0.45944911};
-		aside[]={0.94661784,1.7113052e-007,-0.32239944};
+		pos[]={14.07,30,49.418999};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,0};
 	};
 };
 binarizationWanted=0;
@@ -164,6 +164,101 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="arcmf_group_text";
+					expression="_this setVariable [""arcmf_group_text"",  _value,  true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="1PLT ASL";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="arcmf_group_delay";
+					expression="_this setVariable [""arcmf_group_delay"",  parseNumber _value,  true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="5";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="arcmf_group_enabled";
+					expression="_this setVariable [""arcmf_group_enabled"",  _value,  true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="arcmf_group_accuracy";
+					expression="_this setVariable [""arcmf_group_accuracy"",  parseNumber _value,  true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="arcmf_group_color";
+					expression="_this setVariable [""arcmf_group_color"",  _value,  true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ColorYellow";
+						};
+					};
+				};
+				class Attribute5
+				{
 					property="groupID";
 					expression="_this setGroupID [_value];";
 					class Value
@@ -181,7 +276,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=6;
 			};
 		};
 		class Item1
@@ -322,6 +417,101 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="arcmf_group_text";
+					expression="_this setVariable [""arcmf_group_text"",  _value,  true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ARC A1";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="arcmf_group_delay";
+					expression="_this setVariable [""arcmf_group_delay"",  parseNumber _value,  true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="1";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="arcmf_group_enabled";
+					expression="_this setVariable [""arcmf_group_enabled"",  _value,  true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="arcmf_group_accuracy";
+					expression="_this setVariable [""arcmf_group_accuracy"",  parseNumber _value,  true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="5";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="arcmf_group_color";
+					expression="_this setVariable [""arcmf_group_color"",  _value,  true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ColorRed";
+						};
+					};
+				};
+				class Attribute5
+				{
 					property="groupID";
 					expression="_this setGroupID [_value];";
 					class Value
@@ -339,7 +529,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=6;
 			};
 		};
 		class Item2
@@ -480,6 +670,101 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="arcmf_group_text";
+					expression="_this setVariable [""arcmf_group_text"",  _value,  true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Heli Crew";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="arcmf_group_delay";
+					expression="_this setVariable [""arcmf_group_delay"",  parseNumber _value,  true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="15";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="arcmf_group_enabled";
+					expression="_this setVariable [""arcmf_group_enabled"",  _value,  true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="arcmf_group_accuracy";
+					expression="_this setVariable [""arcmf_group_accuracy"",  parseNumber _value,  true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="150";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="arcmf_group_color";
+					expression="_this setVariable [""arcmf_group_color"",  _value,  true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ColorBrown";
+						};
+					};
+				};
+				class Attribute5
+				{
 					property="groupID";
 					expression="_this setGroupID [_value];";
 					class Value
@@ -497,7 +782,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=6;
 			};
 		};
 		class Item3
