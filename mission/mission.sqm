@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14.07,30,49.418999};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,0};
+		pos[]={27.797035,30,48.766373};
+		dir[]={0.0025665183,-0.67695957,0.73602593};
+		up[]={0.0023611421,0.73601991,0.67695886};
+		aside[]={0.99999726,1.4474608e-008,-0.003487224};
 	};
 };
 binarizationWanted=0;
@@ -101,7 +101,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						init="GrpBLUFOR_ASL = group this; [""dc"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_ASL_SL";
 						description="1PLT Alpha Squad Leader";
 						isPlayer=1;
@@ -146,7 +145,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="GrpBLUFOR_ASL = group this; [""m"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_ASL_M";
 						description="1PLT Alpha Medic";
 						isPlayable=1;
@@ -163,25 +161,6 @@ class Mission
 			class CustomAttributes
 			{
 				class Attribute0
-				{
-					property="arcmf_group_text";
-					expression="_this setVariable [""arcmf_group_text"",  _value,  true]";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="1PLT ASL";
-						};
-					};
-				};
-				class Attribute1
 				{
 					property="arcmf_group_delay";
 					expression="_this setVariable [""arcmf_group_delay"",  parseNumber _value,  true]";
@@ -200,64 +179,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute2
-				{
-					property="arcmf_group_enabled";
-					expression="_this setVariable [""arcmf_group_enabled"",  _value,  true]";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="arcmf_group_accuracy";
-					expression="_this setVariable [""arcmf_group_accuracy"",  parseNumber _value,  true]";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="0";
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="arcmf_group_color";
-					expression="_this setVariable [""arcmf_group_color"",  _value,  true]";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="ColorYellow";
-						};
-					};
-				};
-				class Attribute5
+				class Attribute1
 				{
 					property="groupID";
 					expression="_this setGroupID [_value];";
@@ -276,7 +198,102 @@ class Mission
 						};
 					};
 				};
-				nAttributes=6;
+				class Attribute2
+				{
+					property="arcmf_group_accuracy";
+					expression="_this setVariable [""arcmf_group_accuracy"",  parseNumber _value,  true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="arcmf_group_text";
+					expression="_this setVariable [""arcmf_group_text"",  _value,  true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="1PLT ASL";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="arcmf_group_code";
+					expression="_this setVariable [""arcmf_group_code"",  _value,  true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="_this setMarkerBrushLocal ""SolidBorder"";" \n "_this setMarkerShapeLocal ""ELLIPSE"";" \n "_this setMarkerSizeLocal [200, 200];" \n "";
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="arcmf_group_enabled";
+					expression="_this setVariable [""arcmf_group_enabled"",  _value,  true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="arcmf_group_color";
+					expression="_this setVariable [""arcmf_group_color"",  _value,  true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ColorRed";
+						};
+					};
+				};
+				nAttributes=7;
 			};
 		};
 		class Item1
@@ -299,7 +316,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="GrpBLUFOR_A1 = group this; [""ftl"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_A1_FTL";
 						description="1PLT Alpha 1 Fireteam Leader";
 						isPlayable=1;
@@ -319,7 +335,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_A1 = group this; [""ar"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_A1_AR";
 						description="1PLT Alpha 1 Automatic Rifleman";
 						isPlayable=1;
@@ -339,7 +354,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_A1 = group this; [""aar"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_A1_AAR";
 						description="1PLT Alpha 1 Assistant Automatic Rifleman";
 						isPlayable=1;
@@ -359,7 +373,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_A1 = group this; [""rat"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_A1_AT";
 						description="1PLT Alpha 1 Rifleman (AT)";
 						isPlayable=1;
@@ -379,7 +392,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_A1 = group this; [""r"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_A1_R_1";
 						description="1PLT Alpha 1 Rifleman";
 						isPlayable=1;
@@ -399,7 +411,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_A1 = group this; [""r"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_A1_R";
 						description="1PLT Alpha 1 Rifleman";
 						isPlayable=1;
@@ -552,7 +563,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="GrpBLUFOR_A2 = group this; [""ftl"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_A2_FTL";
 						description="1PLT Alpha 2 Fireteam Leader";
 						isPlayable=1;
@@ -572,7 +582,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_A2 = group this; [""ar"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_A2_AR";
 						description="1PLT Alpha 2 Automatic Rifleman";
 						isPlayable=1;
@@ -592,7 +601,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_A2 = group this; [""aar"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_A2_AAR";
 						description="1PLT Alpha 2 Assistant Automatic Rifleman";
 						isPlayable=1;
@@ -612,7 +620,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_A2 = group this; [""rat"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_A2_AT";
 						description="1PLT Alpha 2 Rifleman (AT)";
 						isPlayable=1;
@@ -632,7 +639,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_A2 = group this; [""r"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_A2_R_1";
 						description="1PLT Alpha 2 Rifleman";
 						isPlayable=1;
@@ -652,7 +658,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_A2 = group this; [""r"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_A2_R";
 						description="1PLT Alpha 2 Rifleman";
 						isPlayable=1;

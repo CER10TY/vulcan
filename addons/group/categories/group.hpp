@@ -41,5 +41,13 @@ class GVAR(Options) {
             control = "MarkerColor";
             expression = QUOTE(_this setVariable [ARR_3(QQGVAR(color), _value, true)]);
         };
+        class Code {
+            displayName = "Code";
+            tooltip = "Apply code to this group's marker. Passed marker is stored in _this. Always use the local variant of the marker commands.";
+            property = QGVAR(code);
+            control = "EditCodeMulti5";
+            expression = QUOTE(_this setVariable [ARR_3(QQGVAR(code), _value, true)]);
+            defaultValue = "";
+        };
     };
 };

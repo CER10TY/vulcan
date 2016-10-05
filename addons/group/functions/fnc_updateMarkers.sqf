@@ -54,6 +54,7 @@ private _groupsToDrawMarkers = allGroups select {side _x == _playerSide};
         _marker setMarkerColorLocal _color;
         _marker setMarkerTextLocal _text;
         _marker setMarkerSizeLocal [0.88, 0.88];
+        _marker call compile (_group getVariable [QGVAR(code), ""]);
 
         GVAR(markers) pushBack _marker;
         INC(_markerIndex);
