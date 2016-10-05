@@ -1,0 +1,1 @@
+#include "\z\arcmf\addons\loadout\script_component.hpp"

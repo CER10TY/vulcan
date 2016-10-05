@@ -2,9 +2,7 @@ class Header {
     gameType = Coop;
     minPlayers = 1;
     maxPlayers = 229;
-    class ARCMF {
-        Group = 1;
-    };
+    ARCMF = 1;
 };
 
 onLoadName = "ARCMF";

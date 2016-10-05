@@ -1,24 +1,21 @@
 /*
  * Author: Kingsley
- * Checks whether the given addon is activated in the mission config
- * Does not check whether the given addon is actually loaded
+ * Checks whether the addon is activated in the mission config
  *
  * Arguments:
- * 0: Addon name <STRING>
+ * None
  *
  * Return Value:
  * Addon enabled <BOOL>
  *
  * Example:
- * ["group"] call arcmf_common_fnc_addonActive;
+ * [] call arcmf_common_fnc_addonActive;
  *
  * Public: Yes
  */
 
 #include "script_component.hpp"
 
-params [["_addon", "", [""]]];
-
-private _config = (missionConfigFile >> "Header" >> "ARCMF" >> _addon);
+private _config = (missionConfigFile >> "Header" >> "ARCMF");
 
 (!isNull _config && {getNumber _config == 1})

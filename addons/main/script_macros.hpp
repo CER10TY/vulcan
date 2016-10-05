@@ -12,4 +12,4 @@
 #define DACEFUNC(var1,var2) TRIPLES(DOUBLES(ACE_PREFIX,var1),fnc,var2)
 #define QACEFUNC(var1,var2) QUOTE(DACEFUNC(var1,var2))
 
-#define EXIT_IF_ADDON_INACTIVE(ARG0) if !([QUOTE(ARG0)] call CFUNC(addonActive)) exitWith {}
+#define EXIT_IF_NOT_ARCMF if !([] call CFUNC(addonActive)) exitWith {}
