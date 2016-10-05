@@ -4,6 +4,7 @@ ADDON = false;
 
 #include "XEH_PREP.hpp"
 
-GVAR(markers) = [];
+GVAR(groupMarkers) = [];
+GVAR(fireteamMarkers) = [];
 
 ADDON = true;

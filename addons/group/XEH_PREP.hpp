@@ -1,1 +1,2 @@
-PREP(updateMarkers);
+PREP(updateGroupMarkers);
+PREP(updateFireteamMarkers);

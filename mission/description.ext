@@ -1,6 +1,23 @@
-#include "\z\arcmf\addons\main\lib\description.ext"
-//--- You can edit anything below this line
+class Header {
+    gameType = Coop;
+    minPlayers = 1;
+    maxPlayers = 229;
+    class ARCMF {
+        Group = 1;
+    };
+};
 
 onLoadName = "ARCMF";
 onLoadMission = "ARCOMM Mission Framework.";
 author = "Kingsley, tryteyker";
+loadScreen = "\z\arcmf\addons\main\loadScreen.paa";
+enableDebugConsole = 1;
+disabledAI = 1;
+respawn = 1;
+respawnDelay = 3;
+respawnButton = 1;
+respawnOnStart = -1;
+respawnTemplates[] = {"Seagull"};
+
+showGroupIndicator = 0;
+showHUD[] = {true, true, false, false, true, true, false, true};

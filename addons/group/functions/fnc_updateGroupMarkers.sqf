@@ -9,16 +9,16 @@
  * None
  *
  * Example:
- * [] call arcmf_group_fnc_updateMarkers;
+ * [] call arcmf_group_fnc_updateGroupMarkers;
  *
  * Public: No
  */
 
 #include "script_component.hpp"
 
-{deleteMarkerLocal _x; false} count GVAR(markers);
+{deleteMarkerLocal _x; false} count GVAR(groupMarkers);
 
-GVAR(markers) = [];
+GVAR(groupMarkers) = [];
 
 private _playerSide = playerSide;
 private _markerIndex = 0;
@@ -56,7 +56,7 @@ private _groupsToDrawMarkers = allGroups select {side _x == _playerSide};
         _marker setMarkerSizeLocal [0.88, 0.88];
         _marker call compile (_group getVariable [QGVAR(code), ""]);
 
-        GVAR(markers) pushBack _marker;
+        GVAR(groupMarkers) pushBack _marker;
         INC(_markerIndex);
     };
 
