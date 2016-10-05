@@ -1,4 +1,4 @@
-class GVAR(Options) {
+class GVAR(Group) {
     displayName = "Group Marker";
     collapsed = 0;
     class Attributes {

@@ -103,7 +103,6 @@ class Mission
 						rank="SERGEANT";
 						name="UnitBLUFOR_ASL_SL";
 						description="1PLT Alpha Squad Leader";
-						isPlayer=1;
 						isPlayable=1;
 					};
 					id=18;
@@ -175,7 +174,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="5";
+							value="2";
 						};
 					};
 				};
@@ -232,7 +231,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="1PLT ASL";
+							value="ASL";
 						};
 					};
 				};
@@ -251,7 +250,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="_this setMarkerBrushLocal ""SolidBorder"";" \n "_this setMarkerShapeLocal ""ELLIPSE"";" \n "_this setMarkerSizeLocal [200, 200];" \n "";
+							value="";
 						};
 					};
 				};
@@ -308,7 +307,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={24.08379,5.0014391,71.58522};
+						position[]={24.084,5.0014391,71.585007};
 					};
 					side="West";
 					flags=6;
@@ -318,10 +317,34 @@ class Mission
 						rank="CORPORAL";
 						name="UnitBLUFOR_A1_FTL";
 						description="1PLT Alpha 1 Fireteam Leader";
+						isPlayer=1;
 						isPlayable=1;
 					};
 					id=24;
 					type="B_Soldier_TL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item1
 				{
@@ -428,25 +451,6 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="arcmf_group_text";
-					expression="_this setVariable [""arcmf_group_text"",  _value,  true]";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="ARC A1";
-						};
-					};
-				};
-				class Attribute1
-				{
 					property="arcmf_group_delay";
 					expression="_this setVariable [""arcmf_group_delay"",  parseNumber _value,  true]";
 					class Value
@@ -460,68 +464,11 @@ class Mission
 									"STRING"
 								};
 							};
-							value="1";
+							value="2";
 						};
 					};
 				};
-				class Attribute2
-				{
-					property="arcmf_group_enabled";
-					expression="_this setVariable [""arcmf_group_enabled"",  _value,  true]";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="arcmf_group_accuracy";
-					expression="_this setVariable [""arcmf_group_accuracy"",  parseNumber _value,  true]";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="5";
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="arcmf_group_color";
-					expression="_this setVariable [""arcmf_group_color"",  _value,  true]";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="ColorRed";
-						};
-					};
-				};
-				class Attribute5
+				class Attribute1
 				{
 					property="groupID";
 					expression="_this setGroupID [_value];";
@@ -540,7 +487,140 @@ class Mission
 						};
 					};
 				};
-				nAttributes=6;
+				class Attribute2
+				{
+					property="arcmf_group_accuracy";
+					expression="_this setVariable [""arcmf_group_accuracy"",  parseNumber _value,  true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="arcmf_group_text";
+					expression="_this setVariable [""arcmf_group_text"",  _value,  true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="A1";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="arcmf_group_ftEnabled";
+					expression="_this setVariable [""arcmf_group_ftEnabled"",  _value,  true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="arcmf_group_ftDistance";
+					expression="_this setVariable [""arcmf_group_ftDistance"",  parseNumber _value,  true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="10";
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="arcmf_group_code";
+					expression="_this setVariable [""arcmf_group_code"",  _value,  true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="true";
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="arcmf_group_enabled";
+					expression="_this setVariable [""arcmf_group_enabled"",  _value,  true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="arcmf_group_color";
+					expression="_this setVariable [""arcmf_group_color"",  _value,  true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ColorRed";
+						};
+					};
+				};
+				nAttributes=9;
 			};
 		};
 		class Item2
@@ -675,25 +755,6 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="arcmf_group_text";
-					expression="_this setVariable [""arcmf_group_text"",  _value,  true]";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Heli Crew";
-						};
-					};
-				};
-				class Attribute1
-				{
 					property="arcmf_group_delay";
 					expression="_this setVariable [""arcmf_group_delay"",  parseNumber _value,  true]";
 					class Value
@@ -707,68 +768,11 @@ class Mission
 									"STRING"
 								};
 							};
-							value="15";
+							value="2";
 						};
 					};
 				};
-				class Attribute2
-				{
-					property="arcmf_group_enabled";
-					expression="_this setVariable [""arcmf_group_enabled"",  _value,  true]";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="arcmf_group_accuracy";
-					expression="_this setVariable [""arcmf_group_accuracy"",  parseNumber _value,  true]";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="150";
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="arcmf_group_color";
-					expression="_this setVariable [""arcmf_group_color"",  _value,  true]";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="ColorBrown";
-						};
-					};
-				};
-				class Attribute5
+				class Attribute1
 				{
 					property="groupID";
 					expression="_this setGroupID [_value];";
@@ -787,7 +791,102 @@ class Mission
 						};
 					};
 				};
-				nAttributes=6;
+				class Attribute2
+				{
+					property="arcmf_group_accuracy";
+					expression="_this setVariable [""arcmf_group_accuracy"",  parseNumber _value,  true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="arcmf_group_text";
+					expression="_this setVariable [""arcmf_group_text"",  _value,  true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="A2";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="arcmf_group_code";
+					expression="_this setVariable [""arcmf_group_code"",  _value,  true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="true";
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="arcmf_group_enabled";
+					expression="_this setVariable [""arcmf_group_enabled"",  _value,  true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="arcmf_group_color";
+					expression="_this setVariable [""arcmf_group_color"",  _value,  true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ColorRed";
+						};
+					};
+				};
+				nAttributes=7;
 			};
 		};
 		class Item3
