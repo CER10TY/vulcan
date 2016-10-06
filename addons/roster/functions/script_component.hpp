@@ -1,0 +1,1 @@
+#include "\z\arcmf\addons\roster\script_component.hpp"

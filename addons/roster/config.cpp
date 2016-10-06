@@ -5,7 +5,7 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"ace_common", "3DEN"};
+        requiredAddons[] = {"arcmf_main"};
         author = ECSTRING(main,ARCMFTeam);
         authors[] = {"Kingsley"};
         VERSION_CONFIG;
@@ -13,6 +13,4 @@ class CfgPatches {
 };
 
 #include "CfgEventHandlers.hpp"
-#include "CfgModuleCategories.hpp"
 #include "CfgEden.hpp"
-#include "CfgMarkerColors.hpp"
