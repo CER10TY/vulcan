@@ -15,8 +15,10 @@ class GVAR(Fireteam) {
             tooltip = "Maximum distance for the marker to be visible from the player.";
             property = QGVAR(ftDistance);
             control = "EditShort";
-            expression = QUOTE(_this setVariable [ARR_3(QQGVAR(ftDistance), parseNumber _value, true)]);
-            defaultValue = "150";
+            expression = QUOTE(_this setVariable [ARR_3(QQGVAR(ftDistance), _value, true)]);
+            defaultValue = 150;
+            validate = "number";
+            typeName = "NUMBER";
         };
     };
 };

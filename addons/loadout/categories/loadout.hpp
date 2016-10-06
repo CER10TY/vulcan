@@ -9,7 +9,7 @@ class GVAR(Loadout) {
             control = "EditShort";
             condition = "objectBrain";
             expression = QUOTE(_this setVariable [ARR_3(QQGVAR(loadout), _value, true)]);
-            defaultValue = "";
+            defaultValue = "nil";
         };
     };
 };

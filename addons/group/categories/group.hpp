@@ -15,16 +15,20 @@ class GVAR(Group) {
             tooltip = "Delay in seconds for this group's marker update";
             property = QGVAR(delay);
             control = "EditShort";
-            expression = QUOTE(_this setVariable [ARR_3(QQGVAR(delay), parseNumber _value, true)]);
-            defaultValue = QUOTE(DEFAULT_DELAY);
+            expression = QUOTE(_this setVariable [ARR_3(QQGVAR(delay), _value, true)]);
+            defaultValue = DEFAULT_DELAY;
+            validate = "number";
+            typeName = "NUMBER";
         };
         class Accuracy {
             displayName = "Accuracy";
             tooltip = "Accuracy of this group's marker position in meters";
             property = QGVAR(accuracy);
             control = "EditShort";
-            expression = QUOTE(_this setVariable [ARR_3(QQGVAR(accuracy), parseNumber _value, true)]);
-            defaultValue = "0";
+            expression = QUOTE(_this setVariable [ARR_3(QQGVAR(accuracy), _value, true)]);
+            defaultValue = 0;
+            validate = "number";
+            typeName = "NUMBER";
         };
         class Text {
             displayName = "Text";
@@ -47,7 +51,7 @@ class GVAR(Group) {
             property = QGVAR(code);
             control = "EditCodeMulti5";
             expression = QUOTE(_this setVariable [ARR_3(QQGVAR(code), _value, true)]);
-            defaultValue = "";
+            defaultValue = "nil";
         };
     };
 };
