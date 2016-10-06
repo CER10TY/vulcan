@@ -28,5 +28,6 @@ switch (_side) do {
     case east: {"opfor"};
     case resistance: {"indfor"};
     case civilian: {"civilian"};
+    case sideLogic: {"game_master"};
     default {"unknown"};
 };

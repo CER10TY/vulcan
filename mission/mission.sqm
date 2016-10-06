@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={31.514568,15.91383,52.469601};
-		dir[]={-0.12844263,-0.3917762,0.91105717};
-		up[]={-0.054700036,0.92003846,0.3879925};
-		aside[]={0.99021393,-7.3108822e-008,0.13960205};
+		pos[]={19.652996,15.91383,67.865356};
+		dir[]={0.34012482,-0.66479969,0.66512215};
+		up[]={0.30270225,0.7469821,0.59194231};
+		aside[]={0.89035714,-1.8393621e-007,-0.4553031};
 	};
 };
 binarizationWanted=0;
@@ -58,11 +58,11 @@ class CustomAttributes
 {
 	class Category0
 	{
-		name="arcmf_briefing_Settings";
+		name="arcmf_briefing_Briefings";
 		class Attribute0
 		{
-			property="arcmf_briefing_Mission_BLUFOR";
-			expression="missionNamespace setVariable [""arcmf_briefing_BLUFOR_Mission"",  _value,  true]";
+			property="arcmf_briefing_OPFOR_FireSupportPlan";
+			expression="missionNamespace setVariable [""arcmf_briefing_OPFOR_FireSupportPlan"",  _value,  true]";
 			class Value
 			{
 				class data
@@ -80,8 +80,8 @@ class CustomAttributes
 		};
 		class Attribute1
 		{
-			property="arcmf_briefing_EnemyForces_CIVILIAN";
-			expression="missionNamespace setVariable [""arcmf_briefing_CIVILIAN_EnemyForces"",  _value,  true]";
+			property="arcmf_briefing_INDFOR_Notes";
+			expression="missionNamespace setVariable [""arcmf_briefing_INDFOR_Notes"",  _value,  true]";
 			class Value
 			{
 				class data
@@ -99,8 +99,8 @@ class CustomAttributes
 		};
 		class Attribute2
 		{
-			property="arcmf_briefing_MovementPlan_CIVILIAN";
-			expression="missionNamespace setVariable [""arcmf_briefing_CIVILIAN_MovementPlan"",  _value,  true]";
+			property="arcmf_briefing_CIVILIAN_Logistics";
+			expression="missionNamespace setVariable [""arcmf_briefing_CIVILIAN_Logistics"",  _value,  true]";
 			class Value
 			{
 				class data
@@ -118,8 +118,8 @@ class CustomAttributes
 		};
 		class Attribute3
 		{
-			property="arcmf_briefing_CommandersIntent_CIVILIAN";
-			expression="missionNamespace setVariable [""arcmf_briefing_CIVILIAN_CommandersIntent"",  _value,  true]";
+			property="arcmf_briefing_GAME_MASTER_FireSupportPlan";
+			expression="missionNamespace setVariable [""arcmf_briefing_GAME_MASTER_FireSupportPlan"",  _value,  true]";
 			class Value
 			{
 				class data
@@ -137,8 +137,8 @@ class CustomAttributes
 		};
 		class Attribute4
 		{
-			property="arcmf_briefing_Mission_CIVILIAN";
-			expression="missionNamespace setVariable [""arcmf_briefing_CIVILIAN_Mission"",  _value,  true]";
+			property="arcmf_briefing_OPFOR_Logistics";
+			expression="missionNamespace setVariable [""arcmf_briefing_OPFOR_Logistics"",  _value,  true]";
 			class Value
 			{
 				class data
@@ -156,8 +156,8 @@ class CustomAttributes
 		};
 		class Attribute5
 		{
-			property="arcmf_briefing_Mission_INDFOR";
-			expression="missionNamespace setVariable [""arcmf_briefing_INDFOR_Mission"",  _value,  true]";
+			property="arcmf_briefing_CIVILIAN_Mission";
+			expression="missionNamespace setVariable [""arcmf_briefing_CIVILIAN_Mission"",  _value,  true]";
 			class Value
 			{
 				class data
@@ -175,8 +175,8 @@ class CustomAttributes
 		};
 		class Attribute6
 		{
-			property="arcmf_briefing_EnemyForces_OPFOR";
-			expression="missionNamespace setVariable [""arcmf_briefing_OPFOR_EnemyForces"",  _value,  true]";
+			property="arcmf_briefing_GAME_MASTER_Situation";
+			expression="missionNamespace setVariable [""arcmf_briefing_GAME_MASTER_Situation"",  _value,  true]";
 			class Value
 			{
 				class data
@@ -194,8 +194,8 @@ class CustomAttributes
 		};
 		class Attribute7
 		{
-			property="arcmf_briefing_FriendlyForces_BLUFOR";
-			expression="missionNamespace setVariable [""arcmf_briefing_BLUFOR_FriendlyForces"",  _value,  true]";
+			property="arcmf_briefing_OPFOR_Notes";
+			expression="missionNamespace setVariable [""arcmf_briefing_OPFOR_Notes"",  _value,  true]";
 			class Value
 			{
 				class data
@@ -213,8 +213,8 @@ class CustomAttributes
 		};
 		class Attribute8
 		{
-			property="arcmf_briefing_Situation_OPFOR";
-			expression="missionNamespace setVariable [""arcmf_briefing_OPFOR_Situation"",  _value,  true]";
+			property="arcmf_briefing_GAME_MASTER_SpecialTasks";
+			expression="missionNamespace setVariable [""arcmf_briefing_GAME_MASTER_SpecialTasks"",  _value,  true]";
 			class Value
 			{
 				class data
@@ -232,8 +232,8 @@ class CustomAttributes
 		};
 		class Attribute9
 		{
-			property="arcmf_briefing_MovementPlan_OPFOR";
-			expression="missionNamespace setVariable [""arcmf_briefing_OPFOR_MovementPlan"",  _value,  true]";
+			property="arcmf_briefing_INDFOR_Mission";
+			expression="missionNamespace setVariable [""arcmf_briefing_INDFOR_Mission"",  _value,  true]";
 			class Value
 			{
 				class data
@@ -251,8 +251,8 @@ class CustomAttributes
 		};
 		class Attribute10
 		{
-			property="arcmf_briefing_FriendlyForces_CIVILIAN";
-			expression="missionNamespace setVariable [""arcmf_briefing_CIVILIAN_FriendlyForces"",  _value,  true]";
+			property="arcmf_briefing_CIVILIAN_CommandersIntent";
+			expression="missionNamespace setVariable [""arcmf_briefing_CIVILIAN_CommandersIntent"",  _value,  true]";
 			class Value
 			{
 				class data
@@ -270,8 +270,8 @@ class CustomAttributes
 		};
 		class Attribute11
 		{
-			property="arcmf_briefing_FriendlyForces_INDFOR";
-			expression="missionNamespace setVariable [""arcmf_briefing_INDFOR_FriendlyForces"",  _value,  true]";
+			property="arcmf_briefing_INDFOR_Situation";
+			expression="missionNamespace setVariable [""arcmf_briefing_INDFOR_Situation"",  _value,  true]";
 			class Value
 			{
 				class data
@@ -289,8 +289,8 @@ class CustomAttributes
 		};
 		class Attribute12
 		{
-			property="arcmf_briefing_FriendlyForces_OPFOR";
-			expression="missionNamespace setVariable [""arcmf_briefing_OPFOR_FriendlyForces"",  _value,  true]";
+			property="arcmf_briefing_INDFOR_CommandersIntent";
+			expression="missionNamespace setVariable [""arcmf_briefing_INDFOR_CommandersIntent"",  _value,  true]";
 			class Value
 			{
 				class data
@@ -308,8 +308,8 @@ class CustomAttributes
 		};
 		class Attribute13
 		{
-			property="arcmf_briefing_MovementPlan_BLUFOR";
-			expression="missionNamespace setVariable [""arcmf_briefing_BLUFOR_MovementPlan"",  _value,  true]";
+			property="arcmf_briefing_GAME_MASTER_CommandersIntent";
+			expression="missionNamespace setVariable [""arcmf_briefing_GAME_MASTER_CommandersIntent"",  _value,  true]";
 			class Value
 			{
 				class data
@@ -327,8 +327,8 @@ class CustomAttributes
 		};
 		class Attribute14
 		{
-			property="arcmf_briefing_Mission_OPFOR";
-			expression="missionNamespace setVariable [""arcmf_briefing_OPFOR_Mission"",  _value,  true]";
+			property="arcmf_briefing_GAME_MASTER_Notes";
+			expression="missionNamespace setVariable [""arcmf_briefing_GAME_MASTER_Notes"",  _value,  true]";
 			class Value
 			{
 				class data
@@ -346,8 +346,8 @@ class CustomAttributes
 		};
 		class Attribute15
 		{
-			property="arcmf_briefing_CommandersIntent_BLUFOR";
-			expression="missionNamespace setVariable [""arcmf_briefing_BLUFOR_CommandersIntent"",  _value,  true]";
+			property="arcmf_briefing_CIVILIAN_Notes";
+			expression="missionNamespace setVariable [""arcmf_briefing_CIVILIAN_Notes"",  _value,  true]";
 			class Value
 			{
 				class data
@@ -365,8 +365,8 @@ class CustomAttributes
 		};
 		class Attribute16
 		{
-			property="arcmf_briefing_EnemyForces_BLUFOR";
-			expression="missionNamespace setVariable [""arcmf_briefing_BLUFOR_EnemyForces"",  _value,  true]";
+			property="arcmf_briefing_GAME_MASTER_MovementPlan";
+			expression="missionNamespace setVariable [""arcmf_briefing_GAME_MASTER_MovementPlan"",  _value,  true]";
 			class Value
 			{
 				class data
@@ -378,13 +378,13 @@ class CustomAttributes
 							"STRING"
 						};
 					};
-					value="Enemies.";
+					value="";
 				};
 			};
 		};
 		class Attribute17
 		{
-			property="arcmf_briefing_Situation_BLUFOR";
+			property="arcmf_briefing_BLUFOR_Situation";
 			expression="missionNamespace setVariable [""arcmf_briefing_BLUFOR_Situation"",  _value,  true]";
 			class Value
 			{
@@ -397,14 +397,14 @@ class CustomAttributes
 							"STRING"
 						};
 					};
-					value="1" \n "2" \n "3" \n "4";
+					value="After being cut off from friendly forces, we've been surrounded by the enemy. If we want to survive, the only way out is the west across the bridge.";
 				};
 			};
 		};
 		class Attribute18
 		{
-			property="arcmf_briefing_MovementPlan_INDFOR";
-			expression="missionNamespace setVariable [""arcmf_briefing_INDFOR_MovementPlan"",  _value,  true]";
+			property="arcmf_briefing_OPFOR_FriendlyForces";
+			expression="missionNamespace setVariable [""arcmf_briefing_OPFOR_FriendlyForces"",  _value,  true]";
 			class Value
 			{
 				class data
@@ -422,8 +422,8 @@ class CustomAttributes
 		};
 		class Attribute19
 		{
-			property="arcmf_briefing_CommandersIntent_OPFOR";
-			expression="missionNamespace setVariable [""arcmf_briefing_OPFOR_CommandersIntent"",  _value,  true]";
+			property="arcmf_briefing_CIVILIAN_FireSupportPlan";
+			expression="missionNamespace setVariable [""arcmf_briefing_CIVILIAN_FireSupportPlan"",  _value,  true]";
 			class Value
 			{
 				class data
@@ -441,8 +441,8 @@ class CustomAttributes
 		};
 		class Attribute20
 		{
-			property="arcmf_briefing_CommandersIntent_INDFOR";
-			expression="missionNamespace setVariable [""arcmf_briefing_INDFOR_CommandersIntent"",  _value,  true]";
+			property="arcmf_briefing_INDFOR_EnemyForces";
+			expression="missionNamespace setVariable [""arcmf_briefing_INDFOR_EnemyForces"",  _value,  true]";
 			class Value
 			{
 				class data
@@ -460,8 +460,8 @@ class CustomAttributes
 		};
 		class Attribute21
 		{
-			property="arcmf_briefing_EnemyForces_INDFOR";
-			expression="missionNamespace setVariable [""arcmf_briefing_INDFOR_EnemyForces"",  _value,  true]";
+			property="arcmf_briefing_INDFOR_SpecialTasks";
+			expression="missionNamespace setVariable [""arcmf_briefing_INDFOR_SpecialTasks"",  _value,  true]";
 			class Value
 			{
 				class data
@@ -479,8 +479,8 @@ class CustomAttributes
 		};
 		class Attribute22
 		{
-			property="arcmf_briefing_Situation_INDFOR";
-			expression="missionNamespace setVariable [""arcmf_briefing_INDFOR_Situation"",  _value,  true]";
+			property="arcmf_briefing_INDFOR_FireSupportPlan";
+			expression="missionNamespace setVariable [""arcmf_briefing_INDFOR_FireSupportPlan"",  _value,  true]";
 			class Value
 			{
 				class data
@@ -498,7 +498,26 @@ class CustomAttributes
 		};
 		class Attribute23
 		{
-			property="arcmf_briefing_Situation_CIVILIAN";
+			property="arcmf_briefing_CIVILIAN_FriendlyForces";
+			expression="missionNamespace setVariable [""arcmf_briefing_CIVILIAN_FriendlyForces"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute24
+		{
+			property="arcmf_briefing_CIVILIAN_Situation";
 			expression="missionNamespace setVariable [""arcmf_briefing_CIVILIAN_Situation"",  _value,  true]";
 			class Value
 			{
@@ -515,7 +534,962 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=24;
+		class Attribute25
+		{
+			property="arcmf_briefing_INDFOR_MovementPlan";
+			expression="missionNamespace setVariable [""arcmf_briefing_INDFOR_MovementPlan"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute26
+		{
+			property="arcmf_briefing_BLUFOR_Notes";
+			expression="missionNamespace setVariable [""arcmf_briefing_BLUFOR_Notes"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="Borders are soft borders, marking the general area of operation.";
+				};
+			};
+		};
+		class Attribute27
+		{
+			property="arcmf_briefing_GAME_MASTER_EnemyForces";
+			expression="missionNamespace setVariable [""arcmf_briefing_GAME_MASTER_EnemyForces"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute28
+		{
+			property="arcmf_briefing_GAME_MASTER_Logistics";
+			expression="missionNamespace setVariable [""arcmf_briefing_GAME_MASTER_Logistics"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute29
+		{
+			property="arcmf_briefing_CIVILIAN_SpecialTasks";
+			expression="missionNamespace setVariable [""arcmf_briefing_CIVILIAN_SpecialTasks"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute30
+		{
+			property="arcmf_briefing_CIVILIAN_MovementPlan";
+			expression="missionNamespace setVariable [""arcmf_briefing_CIVILIAN_MovementPlan"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute31
+		{
+			property="arcmf_briefing_OPFOR_Situation";
+			expression="missionNamespace setVariable [""arcmf_briefing_OPFOR_Situation"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute32
+		{
+			property="arcmf_briefing_OPFOR_Mission";
+			expression="missionNamespace setVariable [""arcmf_briefing_OPFOR_Mission"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute33
+		{
+			property="arcmf_briefing_OPFOR_SpecialTasks";
+			expression="missionNamespace setVariable [""arcmf_briefing_OPFOR_SpecialTasks"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute34
+		{
+			property="arcmf_briefing_INDFOR_FriendlyForces";
+			expression="missionNamespace setVariable [""arcmf_briefing_INDFOR_FriendlyForces"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute35
+		{
+			property="arcmf_briefing_BLUFOR_Logistics";
+			expression="missionNamespace setVariable [""arcmf_briefing_BLUFOR_Logistics"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute36
+		{
+			property="arcmf_briefing_BLUFOR_FriendlyForces";
+			expression="missionNamespace setVariable [""arcmf_briefing_BLUFOR_FriendlyForces"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="US Forces" \n "- Infantry" \n "- 5x M113A3 M240";
+				};
+			};
+		};
+		class Attribute37
+		{
+			property="arcmf_briefing_BLUFOR_CommandersIntent";
+			expression="missionNamespace setVariable [""arcmf_briefing_BLUFOR_CommandersIntent"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute38
+		{
+			property="arcmf_briefing_BLUFOR_FireSupportPlan";
+			expression="missionNamespace setVariable [""arcmf_briefing_BLUFOR_FireSupportPlan"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute39
+		{
+			property="arcmf_briefing_BLUFOR_SpecialTasks";
+			expression="missionNamespace setVariable [""arcmf_briefing_BLUFOR_SpecialTasks"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute40
+		{
+			property="arcmf_briefing_INDFOR_Logistics";
+			expression="missionNamespace setVariable [""arcmf_briefing_INDFOR_Logistics"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute41
+		{
+			property="arcmf_briefing_OPFOR_CommandersIntent";
+			expression="missionNamespace setVariable [""arcmf_briefing_OPFOR_CommandersIntent"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute42
+		{
+			property="arcmf_briefing_BLUFOR_MovementPlan";
+			expression="missionNamespace setVariable [""arcmf_briefing_BLUFOR_MovementPlan"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="Use the M113A3's however you like - there is no requirement to get them across the bridge.";
+				};
+			};
+		};
+		class Attribute43
+		{
+			property="arcmf_briefing_OPFOR_MovementPlan";
+			expression="missionNamespace setVariable [""arcmf_briefing_OPFOR_MovementPlan"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute44
+		{
+			property="arcmf_briefing_CIVILIAN_EnemyForces";
+			expression="missionNamespace setVariable [""arcmf_briefing_CIVILIAN_EnemyForces"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute45
+		{
+			property="arcmf_briefing_GAME_MASTER_FriendlyForces";
+			expression="missionNamespace setVariable [""arcmf_briefing_GAME_MASTER_FriendlyForces"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute46
+		{
+			property="arcmf_briefing_BLUFOR_Mission";
+			expression="missionNamespace setVariable [""arcmf_briefing_BLUFOR_Mission"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="Our mission is to break through enemy lines in the hopes of getting across the bridge to safety.";
+				};
+			};
+		};
+		class Attribute47
+		{
+			property="arcmf_briefing_GAME_MASTER_Mission";
+			expression="missionNamespace setVariable [""arcmf_briefing_GAME_MASTER_Mission"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute48
+		{
+			property="arcmf_briefing_BLUFOR_EnemyForces";
+			expression="missionNamespace setVariable [""arcmf_briefing_BLUFOR_EnemyForces"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="Viet Cong" \n "- Infantry" \n "- Emplacements" \n "- Light Vehicles" \n "- Armor";
+				};
+			};
+		};
+		class Attribute49
+		{
+			property="arcmf_briefing_OPFOR_EnemyForces";
+			expression="missionNamespace setVariable [""arcmf_briefing_OPFOR_EnemyForces"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		nAttributes=50;
+	};
+	class Category1
+	{
+		name="arcmf_briefing_CommPlans";
+		class Attribute0
+		{
+			property="arcmf_briefing_OPFOR_ANPRC117F";
+			expression="missionNamespace setVariable [""arcmf_briefing_OPFOR_ANPRC117F"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="arcmf_briefing_GAME_MASTER_ANPRC343";
+			expression="missionNamespace setVariable [""arcmf_briefing_GAME_MASTER_ANPRC343"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute2
+		{
+			property="arcmf_briefing_OPFOR_ANPRC343";
+			expression="missionNamespace setVariable [""arcmf_briefing_OPFOR_ANPRC343"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute3
+		{
+			property="arcmf_briefing_BLUFOR_ANPRC77";
+			expression="missionNamespace setVariable [""arcmf_briefing_BLUFOR_ANPRC77"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute4
+		{
+			property="arcmf_briefing_GAME_MASTER_ANPRC77";
+			expression="missionNamespace setVariable [""arcmf_briefing_GAME_MASTER_ANPRC77"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute5
+		{
+			property="arcmf_briefing_BLUFOR_ANPRC117F";
+			expression="missionNamespace setVariable [""arcmf_briefing_BLUFOR_ANPRC117F"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute6
+		{
+			property="arcmf_briefing_INDFOR_ANPRC343";
+			expression="missionNamespace setVariable [""arcmf_briefing_INDFOR_ANPRC343"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute7
+		{
+			property="arcmf_briefing_GAME_MASTER_ANPRC117F";
+			expression="missionNamespace setVariable [""arcmf_briefing_GAME_MASTER_ANPRC117F"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute8
+		{
+			property="arcmf_briefing_BLUFOR_ANPRC148";
+			expression="missionNamespace setVariable [""arcmf_briefing_BLUFOR_ANPRC148"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="1st Platoon (Ch 1)";
+				};
+			};
+		};
+		class Attribute9
+		{
+			property="arcmf_briefing_CIVILIAN_ANPRC148";
+			expression="missionNamespace setVariable [""arcmf_briefing_CIVILIAN_ANPRC148"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute10
+		{
+			property="arcmf_briefing_OPFOR_ANPRC77";
+			expression="missionNamespace setVariable [""arcmf_briefing_OPFOR_ANPRC77"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute11
+		{
+			property="arcmf_briefing_GAME_MASTER_ANPRC148";
+			expression="missionNamespace setVariable [""arcmf_briefing_GAME_MASTER_ANPRC148"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute12
+		{
+			property="arcmf_briefing_OPFOR_ANPRC148";
+			expression="missionNamespace setVariable [""arcmf_briefing_OPFOR_ANPRC148"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute13
+		{
+			property="arcmf_briefing_CIVILIAN_ANPRC117F";
+			expression="missionNamespace setVariable [""arcmf_briefing_CIVILIAN_ANPRC117F"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute14
+		{
+			property="arcmf_briefing_INDFOR_ANPRC148";
+			expression="missionNamespace setVariable [""arcmf_briefing_INDFOR_ANPRC148"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute15
+		{
+			property="arcmf_briefing_INDFOR_ANPRC117F";
+			expression="missionNamespace setVariable [""arcmf_briefing_INDFOR_ANPRC117F"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute16
+		{
+			property="arcmf_briefing_INDFOR_ANPRC77";
+			expression="missionNamespace setVariable [""arcmf_briefing_INDFOR_ANPRC77"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute17
+		{
+			property="arcmf_briefing_BLUFOR_ANPRC152";
+			expression="missionNamespace setVariable [""arcmf_briefing_BLUFOR_ANPRC152"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute18
+		{
+			property="arcmf_briefing_CIVILIAN_ANPRC152";
+			expression="missionNamespace setVariable [""arcmf_briefing_CIVILIAN_ANPRC152"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute19
+		{
+			property="arcmf_briefing_CIVILIAN_ANPRC77";
+			expression="missionNamespace setVariable [""arcmf_briefing_CIVILIAN_ANPRC77"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute20
+		{
+			property="arcmf_briefing_BLUFOR_ANPRC343";
+			expression="missionNamespace setVariable [""arcmf_briefing_BLUFOR_ANPRC343"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="Alpha (Ch 1)" \n "Bravo (Ch 2)" \n "Charlie (Ch 3)";
+				};
+			};
+		};
+		class Attribute21
+		{
+			property="arcmf_briefing_CIVILIAN_ANPRC343";
+			expression="missionNamespace setVariable [""arcmf_briefing_CIVILIAN_ANPRC343"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute22
+		{
+			property="arcmf_briefing_OPFOR_ANPRC152";
+			expression="missionNamespace setVariable [""arcmf_briefing_OPFOR_ANPRC152"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute23
+		{
+			property="arcmf_briefing_GAME_MASTER_ANPRC152";
+			expression="missionNamespace setVariable [""arcmf_briefing_GAME_MASTER_ANPRC152"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute24
+		{
+			property="arcmf_briefing_INDFOR_ANPRC152";
+			expression="missionNamespace setVariable [""arcmf_briefing_INDFOR_ANPRC152"",  _value,  true]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		nAttributes=25;
 	};
 };
 class Mission
