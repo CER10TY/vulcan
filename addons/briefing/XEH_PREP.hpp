@@ -1,1 +1,2 @@
 PREP(createBriefing);
+PREP(createFrameworkBriefing);

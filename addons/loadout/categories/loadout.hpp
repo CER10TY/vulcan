@@ -4,7 +4,7 @@ class GVAR(Loadout) {
     class Attributes {
         class Role {
             displayName = "Role";
-            tooltip = "Unit role defined in the loadout file";
+            tooltip = "Name of the loadout file for this unit's faction without the extension";
             property = QGVAR(loadout);
             control = "EditShort";
             condition = "objectBrain";
