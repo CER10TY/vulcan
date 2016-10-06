@@ -1,6 +1,6 @@
 class CfgMarkerColors {
     class ColorRed {
-        color[] = {1, 0.2, 0.2, 1};
+        color[] = {0.741, 0.173, 0.173, 1};
     };
     class ColorGreen {
         color[] = {0, 0.702, 0.349, 1};

@@ -16,24 +16,23 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={75.754944,22.893023,100.30481};
-		dir[]={-0.50182623,-0.45332968,-0.73667127};
-		up[]={-0.25522614,0.89133775,-0.37466675};
-		aside[]={-0.82646835,-2.104789e-007,0.56299859};
+		pos[]={38.140797,22.893023,99.009262};
+		dir[]={-0.30666488,-0.44114032,-0.84343362};
+		up[]={-0.15074348,0.89743358,-0.41459626};
+		aside[]={-0.93981826,-3.4237746e-007,0.34171087};
 	};
 };
 binarizationWanted=0;
 addons[]=
 {
 	"A3_Characters_F",
-	"A3_Data_F_Curator_Virtual",
-	"ace_explosives"
+	"A3_Data_F_Curator_Virtual"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=3;
+		items=2;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -47,13 +46,6 @@ class AddonsMetaData
 			name="Arma 3 Zeus Update - Main Configuration";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
-		};
-		class Item2
-		{
-			className="ace_explosives";
-			name="ACE3 - Explosives";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
 		};
 	};
 };
@@ -88,7 +80,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=18;
+		items=17;
 		class Item0
 		{
 			dataType="Group";
@@ -3441,241 +3433,6 @@ class Mission
 			description="Game Master";
 			id=1856;
 			type="VirtualCurator_F";
-		};
-		class Item17
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=6;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={65.529915,5.0014391,71.186638};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						rank="SERGEANT";
-						isPlayable=1;
-					};
-					id=443;
-					type="B_recon_TL_F";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={70.529915,5.0014391,66.186638};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						skill=0.44999999;
-						rank="CORPORAL";
-						isPlayable=1;
-					};
-					id=444;
-					type="B_recon_M_F";
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={60.529915,5.0014391,66.186638};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						skill=0.40000001;
-						isPlayable=1;
-					};
-					id=445;
-					type="B_recon_medic_F";
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={75.529915,5.0014391,61.186634};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						skill=0.44999999;
-						rank="CORPORAL";
-						isPlayable=1;
-					};
-					id=446;
-					type="B_recon_LAT_F";
-				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={55.529915,5.0014391,61.186634};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						skill=0.40000001;
-						isPlayable=1;
-					};
-					id=447;
-					type="B_recon_JTAC_F";
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={80.529915,5.0014391,56.186634};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						skill=0.40000001;
-						isPlayable=1;
-					};
-					id=448;
-					type="B_recon_exp_F";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=442;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="arcmf_group_text";
-					expression="_this setVariable [""arcmf_group_text"",  _value,  true]";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="SEAL6";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="arcmf_group_enabled";
-					expression="_this setVariable [""arcmf_group_enabled"",  _value,  true]";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="arcmf_group_color";
-					expression="_this setVariable [""arcmf_group_color"",  _value,  true]";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="ColorOrange";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="arcmf_roster_ElementName";
-					expression="_this setVariable [""arcmf_roster_ElementName"",  _value,  true]";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="SEAL Team 6";
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="arcmf_group_code";
-					expression="_this setVariable [""arcmf_group_code"",  _value,  true]";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="arcmf_group_ftEnabled";
-					expression="_this setVariable [""arcmf_group_ftEnabled"",  _value,  true]";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				nAttributes=6;
-			};
 		};
 	};
 };
