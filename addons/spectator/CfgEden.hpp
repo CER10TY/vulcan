@@ -1,0 +1,1 @@
+class Cfg3DEN {};
