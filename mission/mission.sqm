@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={22.425953,28.123117,62.663696};
-		dir[]={0.013563994,-0.92297173,0.38467386};
-		up[]={0.032524161,0.38488227,0.92239368};
-		aside[]={0.99939483,2.1590677e-007,-0.035240535};
+		pos[]={42.051792,17.417685,86.518784};
+		dir[]={-0.49801248,-0.48460364,-0.71913517};
+		up[]={-0.27596417,0.87466753,-0.39849541};
+		aside[]={-0.82211667,3.9837323e-007,0.56932843};
 	};
 };
 binarizationWanted=0;
@@ -101,7 +101,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CAPTAIN";
-						init="GrpBLUFOR_1PLT_CO = group this; [""co"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_1PLT_CO";
 						description="1PLT Commander";
 						isPlayable=1;
@@ -202,7 +201,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="GrpBLUFOR_1PLT_CO = group this; [""m"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_1PLT_CO_M";
 						description="1PLT Medic";
 						isPlayable=1;
@@ -374,7 +372,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						init="GrpBLUFOR_ASL = group this; [""dc"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_ASL_SL";
 						description="1PLT Alpha Squad Leader";
 						isPlayable=1;
@@ -395,7 +392,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="GrpBLUFOR_ASL = group this; [""m"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_ASL_M";
 						description="1PLT Alpha Medic";
 						isPlayable=1;
@@ -567,7 +563,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="GrpBLUFOR_A1 = group this; [""ftl"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_A1_FTL";
 						description="1PLT Alpha 1 Fireteam Leader";
 						isPlayer=1;
@@ -630,7 +625,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_A1 = group this; [""ar"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_A1_AR";
 						description="1PLT Alpha 1 Automatic Rifleman";
 						isPlayable=1;
@@ -692,7 +686,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_A1 = group this; [""aar"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_A1_AAR";
 						description="1PLT Alpha 1 Assistant Automatic Rifleman";
 						isPlayable=1;
@@ -754,7 +747,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_A1 = group this; [""rat"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_A1_AT";
 						description="1PLT Alpha 1 Rifleman (AT)";
 						isPlayable=1;
@@ -816,7 +808,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_A1 = group this; [""r"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_A1_R_1";
 						description="1PLT Alpha 1 Rifleman";
 						isPlayable=1;
@@ -878,7 +869,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_A1 = group this; [""r"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_A1_R";
 						description="1PLT Alpha 1 Rifleman";
 						isPlayable=1;
@@ -1092,7 +1082,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="GrpBLUFOR_A2 = group this; [""ftl"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_A2_FTL";
 						description="1PLT Alpha 2 Fireteam Leader";
 						isPlayable=1;
@@ -1112,7 +1101,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_A2 = group this; [""ar"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_A2_AR";
 						description="1PLT Alpha 2 Automatic Rifleman";
 						isPlayable=1;
@@ -1132,7 +1120,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_A2 = group this; [""aar"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_A2_AAR";
 						description="1PLT Alpha 2 Assistant Automatic Rifleman";
 						isPlayable=1;
@@ -1152,7 +1139,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_A2 = group this; [""rat"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_A2_AT";
 						description="1PLT Alpha 2 Rifleman (AT)";
 						isPlayable=1;
@@ -1172,7 +1158,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_A2 = group this; [""r"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_A2_R_1";
 						description="1PLT Alpha 2 Rifleman";
 						isPlayable=1;
@@ -1192,7 +1177,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_A2 = group this; [""r"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_A2_R";
 						description="1PLT Alpha 2 Rifleman";
 						isPlayable=1;
@@ -1364,7 +1348,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="GrpBLUFOR_A3 = group this; [""ftl"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_A3_FTL";
 						description="1PLT Alpha 3 Fireteam Leader";
 						isPlayable=1;
@@ -1384,7 +1367,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_A3 = group this; [""ar"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_A3_AR";
 						description="1PLT Alpha 3 Automatic Rifleman";
 						isPlayable=1;
@@ -1404,7 +1386,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_A3 = group this; [""aar"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_A3_AAR";
 						description="1PLT Alpha 3 Assistant Automatic Rifleman";
 						isPlayable=1;
@@ -1424,7 +1405,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_A3 = group this; [""rat"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_A3_AT";
 						description="1PLT Alpha 3 Rifleman (AT)";
 						isPlayable=1;
@@ -1444,7 +1424,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_A3 = group this; [""r"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_A3_R_1";
 						description="1PLT Alpha 3 Rifleman";
 						isPlayable=1;
@@ -1464,7 +1443,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_A3 = group this; [""r"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_A3_R";
 						description="1PLT Alpha 3 Rifleman";
 						isPlayable=1;
@@ -1636,7 +1614,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						init="GrpBLUFOR_BSL = group this; [""dc"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_BSL_SL";
 						description="1PLT Bravo Squad Leader";
 						isPlayable=1;
@@ -1657,7 +1634,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="GrpBLUFOR_BSL = group this; [""m"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_BSL_M";
 						description="1PLT Bravo Medic";
 						isPlayable=1;
@@ -1829,7 +1805,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="GrpBLUFOR_B1 = group this; [""ftl"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_B1_FTL";
 						description="1PLT Bravo 1 Fireteam Leader";
 						isPlayable=1;
@@ -1849,7 +1824,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_B1 = group this; [""ar"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_B1_AR";
 						description="1PLT Bravo 1 Automatic Rifleman";
 						isPlayable=1;
@@ -1869,7 +1843,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_B1 = group this; [""aar"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_B1_AAR";
 						description="1PLT Bravo 1 Assistant Automatic Rifleman";
 						isPlayable=1;
@@ -1889,7 +1862,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_B1 = group this; [""rat"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_B1_AT";
 						description="1PLT Bravo 1 Rifleman (AT)";
 						isPlayable=1;
@@ -1909,7 +1881,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_B1 = group this; [""r"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_B1_R_1";
 						description="1PLT Bravo 1 Rifleman";
 						isPlayable=1;
@@ -1929,7 +1900,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_B1 = group this; [""r"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_B1_R";
 						description="1PLT Bravo 1 Rifleman";
 						isPlayable=1;
@@ -2101,7 +2071,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="GrpBLUFOR_B2 = group this; [""ftl"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_B2_FTL";
 						description="1PLT Bravo 2 Fireteam Leader";
 						isPlayable=1;
@@ -2121,7 +2090,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_B2 = group this; [""ar"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_B2_AR";
 						description="1PLT Bravo 2 Automatic Rifleman";
 						isPlayable=1;
@@ -2141,7 +2109,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_B2 = group this; [""aar"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_B2_AAR";
 						description="1PLT Bravo 2 Assistant Automatic Rifleman";
 						isPlayable=1;
@@ -2161,7 +2128,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_B2 = group this; [""rat"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_B2_AT";
 						description="1PLT Bravo 2 Rifleman (AT)";
 						isPlayable=1;
@@ -2181,7 +2147,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_B2 = group this; [""r"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_B2_R_1";
 						description="1PLT Bravo 2 Rifleman";
 						isPlayable=1;
@@ -2201,7 +2166,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_B2 = group this; [""r"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_B2_R";
 						description="1PLT Bravo 2 Rifleman";
 						isPlayable=1;
@@ -2373,7 +2337,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="GrpBLUFOR_B3 = group this; [""ftl"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_B3_FTL";
 						description="1PLT Bravo 3 Fireteam Leader";
 						isPlayable=1;
@@ -2393,7 +2356,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_B3 = group this; [""ar"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_B3_AR";
 						description="1PLT Bravo 3 Automatic Rifleman";
 						isPlayable=1;
@@ -2413,7 +2375,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_B3 = group this; [""aar"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_B3_AAR";
 						description="1PLT Bravo 3 Assistant Automatic Rifleman";
 						isPlayable=1;
@@ -2433,7 +2394,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_B3 = group this; [""rat"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_B3_AT";
 						description="1PLT Bravo 3 Rifleman (AT)";
 						isPlayable=1;
@@ -2453,7 +2413,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_B3 = group this; [""r"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_B3_R_1";
 						description="1PLT Bravo 3 Rifleman";
 						isPlayable=1;
@@ -2473,7 +2432,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_B3 = group this; [""r"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_B3_R";
 						description="1PLT Bravo 3 Rifleman";
 						isPlayable=1;
@@ -2645,7 +2603,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						init="GrpBLUFOR_CSL = group this; [""dc"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_CSL_SL";
 						description="1PLT Charlie Squad Leader";
 						isPlayable=1;
@@ -2666,7 +2623,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="GrpBLUFOR_CSL = group this; [""m"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_CSL_M";
 						description="1PLT Charlie Medic";
 						isPlayable=1;
@@ -2838,7 +2794,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="GrpBLUFOR_C1 = group this; [""ftl"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_C1_FTL";
 						description="1PLT Charlie 1 Fireteam Leader";
 						isPlayable=1;
@@ -2858,7 +2813,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_C1 = group this; [""ar"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_C1_AR";
 						description="1PLT Charlie 1 Automatic Rifleman";
 						isPlayable=1;
@@ -2878,7 +2832,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_C1 = group this; [""aar"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_C1_AAR";
 						description="1PLT Charlie 1 Assistant Automatic Rifleman";
 						isPlayable=1;
@@ -2898,7 +2851,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_C1 = group this; [""rat"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_C1_AT";
 						description="1PLT Charlie 1 Rifleman (AT)";
 						isPlayable=1;
@@ -2918,7 +2870,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_C1 = group this; [""r"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_C1_R_1";
 						description="1PLT Charlie 1 Rifleman";
 						isPlayable=1;
@@ -2938,7 +2889,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_C1 = group this; [""r"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_C1_R";
 						description="1PLT Charlie 1 Rifleman";
 						isPlayable=1;
@@ -3110,7 +3060,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="GrpBLUFOR_C2 = group this; [""ftl"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_C2_FTL";
 						description="1PLT Charlie 2 Fireteam Leader";
 						isPlayable=1;
@@ -3130,7 +3079,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_C2 = group this; [""ar"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_C2_AR";
 						description="1PLT Charlie 2 Automatic Rifleman";
 						isPlayable=1;
@@ -3150,7 +3098,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_C2 = group this; [""aar"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_C2_AAR";
 						description="1PLT Charlie 2 Assistant Automatic Rifleman";
 						isPlayable=1;
@@ -3170,7 +3117,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_C2 = group this; [""rat"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_C2_AT";
 						description="1PLT Charlie 2 Rifleman (AT)";
 						isPlayable=1;
@@ -3190,7 +3136,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_C2 = group this; [""r"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_C2_R_1";
 						description="1PLT Charlie 2 Rifleman";
 						isPlayable=1;
@@ -3210,7 +3155,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_C2 = group this; [""r"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_C2_R";
 						description="1PLT Charlie 2 Rifleman";
 						isPlayable=1;
@@ -3382,7 +3326,6 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="GrpBLUFOR_C3 = group this; [""ftl"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_C3_FTL";
 						description="1PLT Charlie 3 Fireteam Leader";
 						isPlayable=1;
@@ -3402,7 +3345,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_C3 = group this; [""ar"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_C3_AR";
 						description="1PLT Charlie 3 Automatic Rifleman";
 						isPlayable=1;
@@ -3422,7 +3364,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_C3 = group this; [""aar"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_C3_AAR";
 						description="1PLT Charlie 3 Assistant Automatic Rifleman";
 						isPlayable=1;
@@ -3442,7 +3383,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_C3 = group this; [""rat"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_C3_AT";
 						description="1PLT Charlie 3 Rifleman (AT)";
 						isPlayable=1;
@@ -3462,7 +3402,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_C3 = group this; [""r"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_C3_R_1";
 						description="1PLT Charlie 3 Rifleman";
 						isPlayable=1;
@@ -3482,7 +3421,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpBLUFOR_C3 = group this; [""r"",this] call f_fnc_assignGear;";
 						name="UnitBLUFOR_C3_R";
 						description="1PLT Charlie 3 Rifleman";
 						isPlayable=1;
