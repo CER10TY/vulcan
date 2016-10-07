@@ -48,7 +48,7 @@ private _letterGroups = [];
 
 {
     private _group = _x;
-    private _text = _group getVariable [QEGVAR(group,text), groupId _group];
+    private _text = _group getVariable [QGVAR(ElementName), _group getVariable [QEGVAR(group,text), groupId _group]];
     private _initial = _text select [0,1];
     private _index = -1;
 

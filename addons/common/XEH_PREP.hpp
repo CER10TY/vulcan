@@ -5,3 +5,6 @@ PREP(getFaction);
 PREP(addRadio);
 PREP(markerColorToHex);
 PREP(getPhoneticName);
+PREP(getMissionParam);
+PREP(setSafety);
+PREP(getUnitType);

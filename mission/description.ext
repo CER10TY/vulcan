@@ -1,21 +1,19 @@
-class Header {
-    gameType = Coop;
-    minPlayers = 1;
-    maxPlayers = 229;
-    ARCMF = 1;
+#define TITLE "ARCMF"
+#define SUMMARY "ARCOMM Mission Framework."
+#define AUTHOR "Kingsley, tryteyker"
+
+#define RESPAWN 1
+#define RESPAWN_DELAY 3
+#define RESPAWN_ON_START -1
+
+//--- Briefing Timer
+// Disabled: -1
+// Infinite: 0
+// Minutes: 1-30
+#define PARAM_BRIEFING_TIMER 0
+
+#include "\z\arcmf\addons\main\description.hpp"
+
+class Params {
+    #include "\z\arcmf\addons\main\params.hpp"
 };
-
-onLoadName = "ARCMF";
-onLoadMission = "ARCOMM Mission Framework.";
-author = "Kingsley, tryteyker";
-loadScreen = "\z\arcmf\addons\main\loadScreen.paa";
-enableDebugConsole = 1;
-disabledAI = 1;
-respawn = 1;
-respawnDelay = 3;
-respawnButton = 1;
-respawnOnStart = -1;
-respawnTemplates[] = {"Seagull"};
-
-showGroupIndicator = 0;
-showHUD[] = {true, true, false, false, true, true, false, true};

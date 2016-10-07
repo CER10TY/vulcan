@@ -46,5 +46,7 @@ reverse _sections;
         };
     } forEach ("true" configClasses _config);
 
-    player createDiaryRecord ["diary", [_header, _output]];
+    if (count _output > 0) then {
+        player createDiaryRecord ["diary", [_header, _output]];
+    };
 } forEach _sections;
