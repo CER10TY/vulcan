@@ -1,2 +1,2 @@
 # ARCMF2
-See this link for details https://github.com/ARCOMM/ARCMF/projects/1
+An updated ARCMF, this provides a config and 3DEN-based approach to the mission framework.
