@@ -1,7 +1,0 @@
-﻿# CONTRIBUTOR LIST
-
-# CORE TEAM
-Kingsley <jameslkingsley@outlook.com>
-CER10TY <soren@johanson-net.me>
-
-# CONTRIBUTORS

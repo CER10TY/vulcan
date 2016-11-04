@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project name="ARCMF">
-    <Package name="Main">
-        <Key ID="STR_ARCMF_Main_ARCMFTeam">
-            <English>ARCOMM</English>
-        </Key>
-    </Package>
-</Project>

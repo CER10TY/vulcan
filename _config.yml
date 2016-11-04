@@ -1,0 +1,31 @@
+name: ARCMF2
+description: ARCMF2 - a better, faster, and more accessible solution to mission editing.
+destination: C:/Users/Soren/Documents/Github/ARCMF2Dev
+
+major: 1
+minor: 0
+patch: 0
+build: 0
+
+footer-links:
+  github: arcomm/ARCMF2
+
+url: https://arcomm.github.io/ARCMF2
+permalink: /:title/
+
+kramdown:
+    html_to_native: true
+    input: GFM
+    syntax_highlighter: rouge
+    syntax_highlighter_opts:
+        css_class: 'highlight'
+
+sass:
+    style: :compressed
+
+exclude:
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
+    - CNAME

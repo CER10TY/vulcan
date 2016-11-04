@@ -1,5 +1,0 @@
-#include "config.hpp"
-#include "\z\arcmf\addons\main\description.hpp"
-class Params {
-    #include "\z\arcmf\addons\main\params.hpp"
-};
